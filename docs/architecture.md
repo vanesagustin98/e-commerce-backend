@@ -30,7 +30,7 @@ Proyecto de portafolio construido con Node.js, TypeScript, React, PostgreSQL, Pr
 
 **Pregunta:** ¿Quién usa el sistema y para qué?
 
-![Vista 01 — Contexto del sistema](./diagrams/01-contexto.png)[](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmtx679b701101qti83thu8rp/c4/views/ecc70903-ebb8-4c51-b554-53aea2f56c44)
+![Vista 01 — Contexto del sistema](./diagrams/01-contexto.png)[Vista 01 — Contexto del sistema - Isoflow](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmtx679b701101qti83thu8rp/c4/views/ecc70903-ebb8-4c51-b554-53aea2f56c44)
 
 **Elementos:** Comprador, Vendedor, Administrador, Marketplace Platform.
 
@@ -40,7 +40,7 @@ Proyecto de portafolio construido con Node.js, TypeScript, React, PostgreSQL, Pr
 
 **Pregunta:** ¿Qué aplicaciones y bases de datos forman el sistema?
 
-![Vista 02 — Contenedores](./diagrams/02-contenedores.png)[](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmtx679b701101qti83thu8rp/c4/views/ecc70903-ebb8-4c51-b554-53aea2f56c44)
+![Vista 02 — Contenedores](./diagrams/02-contenedores.png)[Vista 02 — Contenedores - Isoflow](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmtx679b701101qti83thu8rp/c4/views/ecc70903-ebb8-4c51-b554-53aea2f56c44)
 
 **Elementos:** Frontend Web (React + TypeScript), Marketplace API (Node.js + TypeScript + Express), PostgreSQL Database.
 
@@ -50,7 +50,7 @@ Proyecto de portafolio construido con Node.js, TypeScript, React, PostgreSQL, Pr
 
 **Pregunta:** ¿Cómo está organizada internamente la API?
 
-![Vista 03 — Componentes de la API](./diagrams/03-componentes-api.png)[](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmtx679b701101qti83thu8rp/c4/views/ecc70903-ebb8-4c51-b554-53aea2f56c44)
+![Vista 03 — Componentes de la API](./diagrams/03-componentes-api.png)[Vista 03 — Componentes de la API - Isoflow](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmtx679b701101qti83thu8rp/c4/views/ecc70903-ebb8-4c51-b554-53aea2f56c44)
 
 **Elementos:** HTTP API Layer, Authentication and Authorization, Catalog and Inventory, Cart and Orders, Persistence Layer, Shared Infrastructure.
 
@@ -64,9 +64,9 @@ Proyecto de portafolio construido con Node.js, TypeScript, React, PostgreSQL, Pr
 
 **Zonas:**
 
-- **Desarrollo local** — Entorno de ejecución local orquestado con Docker Compose, usado por la desarrolladora para levantar y probar el sistema completo (frontend, API y base de datos) antes de subir cambios al repositorio. [](./diagrams/04-componentes-api-desarrollo-local-p1.png) [](./diagrams/04-componentes-api-desarrollo-local-p2.png)
-- **CI/CD** — Pipeline de integración y despliegue continuo ejecutado en GitHub Actions. Se dispara al recibir cambios en el repositorio, valida el código mediante lint y pruebas automatizadas, construye la imagen Docker y publica el artefacto listo para desplegar. [](./diagrams/04-componentes-api-ci-cd.png)
-- **Producción** — Entorno donde se ejecuta la versión desplegada del sistema, accesible para los usuarios finales. Expone la API mediante un contenedor productivo con endpoints de salud (health check) y logs estructurados, respaldado por una base de datos PostgreSQL administrada. [](./diagrams/04-componentes-api-produccion.png)
+- **Desarrollo local** — Entorno de ejecución local orquestado con Docker Compose, usado por la desarrolladora para levantar y probar el sistema completo (frontend, API y base de datos) antes de subir cambios al repositorio. [Desarrollo local - Parte 1 - Image](./diagrams/04-componentes-api-desarrollo-local-p1.png) [Desarrollo local - Parte 2 - Image](./diagrams/04-componentes-api-desarrollo-local-p2.png)
+- **CI/CD** — Pipeline de integración y despliegue continuo ejecutado en GitHub Actions. Se dispara al recibir cambios en el repositorio, valida el código mediante lint y pruebas automatizadas, construye la imagen Docker y publica el artefacto listo para desplegar. [CI/CD - Image](./diagrams/04-componentes-api-ci-cd.png)
+- **Producción** — Entorno donde se ejecuta la versión desplegada del sistema, accesible para los usuarios finales. Expone la API mediante un contenedor productivo con endpoints de salud (health check) y logs estructurados, respaldado por una base de datos PostgreSQL administrada. [Producción - Image](./diagrams/04-componentes-api-produccion.png)
 
 **Pendiente:**
 - ¿El despliegue a producción es manual o automático?
@@ -80,11 +80,11 @@ Proyecto de portafolio construido con Node.js, TypeScript, React, PostgreSQL, Pr
 
 ![Vista 05 — Casos de uso](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmu26v37c018h1qti9jlixj0y/c4/views/61ce1283-57ec-4cf0-9657-f5c5959a47aa)
 
-**Comprador:** explorar productos, filtrar productos, administrar carrito, crear órdenes, consultar estado de compras. [](./diagrams/05-casos-de-uso-comprador.png)
+**Comprador:** explorar productos, filtrar productos, administrar carrito, crear órdenes, consultar estado de compras. [Comprador - Image](./diagrams/05-casos-de-uso-comprador.png)
 
-**Vendedor:** publicar productos, administrar publicaciones, gestionar inventario, gestionar órdenes relacionadas con sus productos. [](./diagrams/05-casos-de-uso-vendedor.png)
+**Vendedor:** publicar productos, administrar publicaciones, gestionar inventario, gestionar órdenes relacionadas con sus productos. [Vendedor - Image](./diagrams/05-casos-de-uso-vendedor.png)
 
-**Administrador:** aprobar vendedores, administrar categorías, moderar publicaciones, consultar información operativa. [](./diagrams/05-casos-de-uso-administrador.png)
+**Administrador:** aprobar vendedores, administrar categorías, moderar publicaciones, consultar información operativa. [Administrador - Image](./diagrams/05-casos-de-uso-administrador.png)
 
 **Pendiente:** ¿Se debe incluir un caso de uso explícito de "Registro/Login", o se mantiene implícito como precondición (ya cubierto por Authentication and Authorization en la vista 03)?
 
@@ -108,7 +108,7 @@ La creación de la orden y la actualización del inventario ocurren dentro de la
 
 **Pregunta:** ¿Cómo se estructura y relaciona la información?
 
-![Vista 07 — Modelo de datos](./diagrams/07-erd.png) [](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmu4nln8x01et1qtipw4z1ppr/c4/views/12572bc0-966e-4da0-869d-dd0a74fc34a4)
+![Vista 07 — Modelo de datos](./diagrams/07-erd.png) [Vista 07 — Modelo de datos - Isoflow](https://isoflow.io/project/cmtvz1ugf00z81qtiyevopnbc/version/cmu4nln8x01et1qtipw4z1ppr/c4/views/12572bc0-966e-4da0-869d-dd0a74fc34a4)
 
 **Entidades:** User, SellerProfile, Category, ProductListing, Cart, CartItem, Order, OrderItem.
 
